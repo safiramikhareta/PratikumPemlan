@@ -1,0 +1,26 @@
+package BAB3_Overload_Overloading;
+import java.util.Scanner;
+public class overloading {
+    public static void HitungLuas(int a,int b){
+        int nilai = a*b;
+        System.out.println("maka hasil luas : "+nilai);
+    }
+    public static void HitungLuas(double a,double b){
+        double nilai = a*b;
+        System.out.println("maka hasil luas : "+nilai);
+    }
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.print("masukkan nilai integer 1 : ");
+        int integer = in.nextInt();
+        System.out.print("masukkan nilai integer 2 : ");
+        int integer2 = in.nextInt();
+        HitungLuas(integer, integer2);
+        System.out.print("masukkan nilai double 1 : ");
+        double double1 = in.nextDouble();
+        System.out.print("masukkan nilai double 2 : ");
+        double double2 = in.nextDouble();
+        HitungLuas(double1, double2);
+        in.close();
+    }
+}
